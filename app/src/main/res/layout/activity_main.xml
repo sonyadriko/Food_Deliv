@@ -35,7 +35,7 @@
         android:textSize="22dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearlayoutcompact"
         tools:ignore="MissingConstraints" />
@@ -51,7 +51,7 @@
         android:textSize="22dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearlayoutcompact"
         tools:ignore="MissingConstraints" />
@@ -67,7 +67,7 @@
 
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textkedua"
         tools:ignore="MissingConstraints" />
@@ -76,9 +76,10 @@
         android:layout_width="180dp"
         android:layout_marginTop="60dp"
         android:textAllCaps="false"
+        android:id="@+id/buttonstarted"
         android:background="#FFC700"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart="parent"
+
         android:text="Get Started   >>"
         android:textStyle="bold"
         android:textSize="12dp"

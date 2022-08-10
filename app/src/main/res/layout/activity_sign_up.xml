@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -19,35 +19,36 @@
             android:layout_width="264dp"
             android:layout_height="280dp"
             android:src="@drawable/delivery_food_"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="TODO" />
 
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <TextView
-        android:id="@+id/textname"
+        android:id="@+id/tvname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="60dp"
         android:gravity="start"
         android:text="@string/name"
         android:textColor="#757575"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearlayoutcompact"
         tools:ignore="MissingConstraints" />
 
-<!--    <com.google.android.material.textfield.TextInputEditText-->
-<!--        android:layout_width="match_parent"-->
+    <!--    <com.google.android.material.textfield.TextInputEditText-->
+    <!--        android:layout_width="match_parent"-->
 
-<!--         android:layout_height="wrap_content"-->
-<!--        tools:ignore="MissingConstraints" />-->
+    <!--         android:layout_height="wrap_content"-->
+    <!--        tools:ignore="MissingConstraints" />-->
 
     <EditText
-        android:id="@+id/ETname"
+        android:id="@+id/edtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -63,10 +64,52 @@
         app:layout_constraintHorizontal_bias="0.08"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textname" />
+        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="Email"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        tools:ignore="MissingConstraints" />
+
+    <!--    <com.google.android.material.textfield.TextInputEditText-->
+    <!--        android:layout_width="match_parent"-->
+
+    <!--         android:layout_height="wrap_content"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:hint="Your Email"
+
+        android:minHeight="48dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvemail"
+        />
 
     <TextView
-        android:id="@+id/textpwd"
+        android:id="@+id/tvpwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -78,7 +121,7 @@
         app:layout_constraintHorizontal_bias="0.053"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ETname"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
         tools:ignore="MissingConstraints" />
 
     <!--    <com.google.android.material.textfield.TextInputEditText-->
@@ -88,13 +131,12 @@
     <!--        tools:ignore="MissingConstraints" />-->
 
     <EditText
-        android:id="@+id/ETpwd"
+        android:id="@+id/edtPwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:inputType="textPassword"
         android:drawableStart="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
         android:hint="@string/your_password"
@@ -106,40 +148,26 @@
         app:layout_constraintHorizontal_bias="0.08"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textpwd"
+        app:layout_constraintTop_toBottomOf="@+id/tvpwd"
         />
 
-    <TextView
-        android:id="@+id/textforgotpwd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="start"
-        android:text="@string/forgot_password"
-        android:textColor="#8D8D8D"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ETpwd"
-        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonlogin"
+        android:id="@+id/buttonsignup"
         android:layout_width="match_parent"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:textAllCaps="false"
         android:background="#FFC700"
         app:layout_constraintEnd_toEndOf="parent"
 
-        android:text="@string/log_in"
+        android:text="Sign Up   >>"
         android:textStyle="bold"
-        android:textSize="12sp"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textforgotpwd"
+        app:layout_constraintTop_toBottomOf="@+id/edtPwd"
         android:layout_height="50dp"/>
 
     <TextView
@@ -148,7 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/don_t_have_an_account_sign_up"
+        android:text="@string/already_have_an_account"
         android:textColor="#000"
 
         android:textSize="14sp"
@@ -156,7 +184,7 @@
         app:layout_constraintHorizontal_bias="0.497"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonlogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsignup"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
